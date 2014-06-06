@@ -161,3 +161,6 @@ svgetinfo (){
 # You need to create fmdiff and fmresolve, which can be found at: http://ssel.vub.ac.be/ssel/internal:fmdiff
 alias svdiff='sv diff --diff-cmd fmdiff' # OS-X SPECIFIC
 # Use diff for command line diff, use fmdiff for gui diff, and svdiff for subversion diff
+
+# NodeJS global env
+export NODE_PATH=/usr/local/lib/node_modules/
