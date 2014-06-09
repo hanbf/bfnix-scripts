@@ -1,5 +1,6 @@
-# See following for more information: http://www.infinitered.com/blog/?p=19
+#!/bin/bash
 
+# See following for more information: http://www.infinitered.com/blog/?p=19
 
 # Path ------------------------------------------------------------
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH  # OS-X Specific, with MacPorts and MySQL installed
