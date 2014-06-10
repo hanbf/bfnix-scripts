@@ -145,6 +145,12 @@ svgetinfo (){
 	sv log $@
 }
 
+svrevertone() {
+	string=`svn status | grep $@ | awk '{print $2}'`
+
+	echo $string
+}
+
 # You need to create fmdiff and fmresolve, which can be found at: http://ssel.vub.ac.be/ssel/internal:fmdiff
 alias svdiff='sv diff --diff-cmd diffwrap_diffmerge.py' # OS-X SPECIFIC
 # Use diff for command line diff, use fmdiff for gui diff, and svdiff for subversion diff
