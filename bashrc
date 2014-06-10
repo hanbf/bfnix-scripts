@@ -150,4 +150,5 @@ alias svdiff='sv diff --diff-cmd diffwrap_diffmerge.py' # OS-X SPECIFIC
 # Use diff for command line diff, use fmdiff for gui diff, and svdiff for subversion diff
 
 # NodeJS global env
-export NODE_PATH=/usr/local/lib/node_modules/
+# global NodeJS modules at /usr/local/lib/node_modules, no need to set
+
