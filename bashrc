@@ -52,7 +52,8 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-
+# include git completions
+source ~/src/git/contrib/completion/git-completion.bash
 
 # Prompts ----------------------------------------------------------
 export PS1="\[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with only a path
@@ -117,7 +118,6 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 # Editors ----------------------------------------------------------
 # export EDITOR='mate -w'  # OS-X SPECIFIC - TextMate, w is to wait for TextMate window to close
 export EDITOR='subl -w' # sublime in my environment
-
 #export EDITOR='gedit'  #Linux/gnome
 #export EDITOR='vim'  #Command line
 
@@ -140,12 +140,16 @@ alias svdelete='sv delete'
 alias svhelp='svn help' 
 alias svblame='sv blame'
 
+# svn external merge tool set
+export SVN_MERGE='/Users/baidu/bin/mergewrap_diffmerge.py'
+
 svgetinfo (){
  	sv info $@
 	sv log $@
 }
 
-svrevertone() {
+# returns path info get from 'svn status', by matching with path segment passed in
+svmatchpath (){
 	string=`svn status | grep $@ | awk '{print $2}'`
 
 	echo $string
@@ -157,4 +161,8 @@ alias svdiff='sv diff --diff-cmd diffwrap_diffmerge.py' # OS-X SPECIFIC
 
 # NodeJS global env
 # global NodeJS modules at /usr/local/lib/node_modules, no need to set
+
+# upload.py related
+
+alias uploadissue='upload.py -e hanbingfeng@baidu.com --env_encoding=utf-8'
 
