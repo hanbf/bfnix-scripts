@@ -9,5 +9,7 @@
 		80,
 		120
 	],
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"font_face": "Inconsolata",
+	"font_size": 14.0
 }
