@@ -2,5 +2,10 @@
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+    // Columns in which to display vertical rulers
+    "rulers": [80, 120],
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true
+
 }
