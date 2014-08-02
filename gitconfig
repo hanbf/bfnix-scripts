@@ -1,6 +1,6 @@
 [user]
-	name = Han Bing Feng
-	email = hanbingfeng@baidu.com
+	name = 
+	email = 
 [core]
 	editor = subl
 	excludesfile = /Users/baidu/.gitignore_global

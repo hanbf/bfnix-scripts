@@ -1,11 +1,13 @@
 {
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"JavaScript"
 	],
-    // Columns in which to display vertical rulers
-    "rulers": [80, 120],
-    // Set to true to insert spaces when tab is pressed
-    "translate_tabs_to_spaces": true
-
+	"rulers":
+	[
+		80,
+		120
+	],
+	"translate_tabs_to_spaces": true
 }
