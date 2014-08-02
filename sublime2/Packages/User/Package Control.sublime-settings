@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"LESS",
 		"Package Control"
 	]
 }
