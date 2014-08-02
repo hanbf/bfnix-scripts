@@ -1,0 +1,30 @@
+[user]
+	name = Han Bing Feng
+	email = hanbingfeng@baidu.com
+[core]
+	editor = subl
+	excludesfile = /Users/baidu/.gitignore_global
+[color]
+	ui = true
+[merge]
+	tool = ext-merge.sh
+[mergetool "ext-merge.sh"]
+	cmd = ext-merge.sh "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+	trustExitCode = false
+[diff]
+	external = ext-diff.sh
+[alias]
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	co = checkout
+	m = merge
+	b = branch
+	master = checkout master
+	mmaster = merge master
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

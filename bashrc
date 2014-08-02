@@ -141,7 +141,7 @@ alias svhelp='svn help'
 alias svblame='sv blame'
 
 # svn external merge tool set
-export SVN_MERGE='/Users/baidu/bin/mergewrap_diffmerge.py'
+export SVN_MERGE='/Users/baidu/bin/svn_ext_merge.py'
 
 svgetinfo (){
  	sv info $@
@@ -156,13 +156,8 @@ svmatchpath (){
 }
 
 # You need to create fmdiff and fmresolve, which can be found at: http://ssel.vub.ac.be/ssel/internal:fmdiff
-alias svdiff='sv diff --diff-cmd diffwrap_diffmerge.py' # OS-X SPECIFIC
+alias svdiff='sv diff --diff-cmd svn_ext_diff.py' # OS-X SPECIFIC
 # Use diff for command line diff, use fmdiff for gui diff, and svdiff for subversion diff
 
 # NodeJS global env
 # global NodeJS modules at /usr/local/lib/node_modules, no need to set
-
-# upload.py related
-
-alias uploadissue='upload.py -e hanbingfeng@baidu.com --env_encoding=utf-8'
-

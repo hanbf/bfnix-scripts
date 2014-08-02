@@ -4,7 +4,8 @@ import sys
 import os
 
 # Configure your favorite diff program here.
-DIFF = "/usr/local/bin/diffmerge.sh"
+# route to git ext merge tool
+DIFF = "/Users/baidu/bin/ext-merge.sh"
 # Subversion provides the paths we need as the last two parameters.
 LEFT  = sys.argv[-2]
 RIGHT = sys.argv[-1]
