@@ -10,6 +10,8 @@
         ,"--indent", "4"
         // assume node.js to predefine node globals.
         ,"--node"
+        // assume browser to predefine node globals.
+        ,"--browser"
         // tolerate unfiltered for in.
         //,"--forin"
         // tolerate dangling _ in identifiers.
@@ -21,7 +23,7 @@
         // tolerate Douglas Crockford.
         ,"--stupid"
         ,"--todo"
-
+        ,"white"
     ]
 
     // if true, run jslint on save.
