@@ -5,6 +5,7 @@
 # Path ------------------------------------------------------------
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:$PATH  # OS-X Specific, with MacPorts and MySQL installed
 #export PATH=/opt/local/bin:/opt/local/sbin:$PATH  # OS-X Specific, with MacPorts installed
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 if [ -d ~/bin ]; then
 	export PATH=:~/bin:$PATH  # add your bin folder to the path, if you have it.  It's a good place to add all your scripts
