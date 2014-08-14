@@ -156,7 +156,7 @@ svmatchpath (){
 }
 
 # You need to create fmdiff and fmresolve, which can be found at: http://ssel.vub.ac.be/ssel/internal:fmdiff
-alias svdiff='sv diff --diff-cmd svn_ext_diff.py' # OS-X SPECIFIC
+alias svdiff='sv diff --diff-cmd svn_ext_diff_p4merge.py' # OS-X SPECIFIC
 # Use diff for command line diff, use fmdiff for gui diff, and svdiff for subversion diff
 
 # NodeJS global env
