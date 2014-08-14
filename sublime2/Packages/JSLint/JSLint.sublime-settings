@@ -3,7 +3,7 @@
     "options" : [
 
         // examples using predef flag.
-        "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
+        "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB', 'define']"
         // tolerate missing 'use strict' pragma.
         ,"--sloppy"
         // suggest an indent level of two spaces.

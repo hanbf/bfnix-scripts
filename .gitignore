@@ -1,1 +1,7 @@
 *DS_Store
+*.pyc
+*.cache
+**/Pristine\ Packages/
+sublime2/Settings/Session.sublime_session
+sublime2/Settings/Auto Save Session.sublime_session
+sublime2/Packages/User/Package Control.last-run
