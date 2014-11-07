@@ -1,2 +1,12 @@
 [
+    {
+        "keys": ["home"],
+        "command": "move_to",
+        "args": {"to": "bol"}
+    },
+    {
+        "keys": ["end"],
+        "command": "move_to",
+        "args": {"to": "eol"}
+    }
 ]

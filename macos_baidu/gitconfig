@@ -4,6 +4,7 @@
 [core]
 	editor = subl
 	excludesfile = /Users/baidu/.gitignore_global
+	autocrlf = false
 [color]
 	ui = true
 [merge]
