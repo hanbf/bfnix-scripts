@@ -116,7 +116,7 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 
 # Editors ----------------------------------------------------------
 # export EDITOR='mate -w'  # OS-X SPECIFIC - TextMate, w is to wait for TextMate window to close
-export EDITOR='subl -w' # sublime in my environment
+export EDITOR='subl' # sublime in my environment
 #export EDITOR='gedit'  #Linux/gnome
 #export EDITOR='vim'  #Command line
 
