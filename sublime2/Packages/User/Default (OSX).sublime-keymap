@@ -10,5 +10,8 @@
         "args": {"to": "eol"}
     },
     { "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
-    { "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } }
+    { "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } },
+    { "keys": ["ctrl+end"], "command": "move_to", "args": {"to": "eof"} },
+    { "keys": ["ctrl+home"], "command": "move_to", "args": {"to": "bof"} },
+    { "keys": ["ctrl+\\"], "command": "toggle_side_bar" }
 ]
