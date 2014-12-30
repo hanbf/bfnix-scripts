@@ -3,7 +3,7 @@
 	email = hangoglebf@gmail.com
 [core]
 	editor = subl
-	excludesfile = /Users/baidu/.gitignore_global
+	excludesfile = /Users/hanbingfeng/.gitignore_global
 	autocrlf = false
 [color]
 	ui = true
@@ -29,8 +29,11 @@
 	mmaster = merge master
 
 [difftool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
+
+[http]
+	postBuffer = 524288000

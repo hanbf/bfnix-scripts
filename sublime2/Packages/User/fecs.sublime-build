@@ -1,0 +1,16 @@
+{
+  "selector": "source.js",
+
+  "cmd": ["fecs", "check", "$file"],
+
+  "file_regex": "fecs\\s+INFO\\s+(.+)\\s+\\(.+\\)",
+  "line_regex": "fecs\\s+.+line\\s+(\\d+).+col\\s+(\\d+):\\s+(.+)$",
+
+  "osx": {
+    "path": "/usr/local/share/npm/bin:/usr/local/bin:/opt/local/bin"
+  },
+
+  "windows": {
+    "cmd": ["fecs.cmd", "check", "$file"]
+  }  
+}

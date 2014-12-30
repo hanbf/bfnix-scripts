@@ -116,7 +116,7 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 
 # Editors ----------------------------------------------------------
 # export EDITOR='mate -w'  # OS-X SPECIFIC - TextMate, w is to wait for TextMate window to close
-export EDITOR='subl -w' # sublime in my environment
+export EDITOR='subl' # sublime in my environment
 #export EDITOR='gedit'  #Linux/gnome
 #export EDITOR='vim'  #Command line
 
@@ -140,7 +140,7 @@ alias svhelp='svn help'
 alias svblame='sv blame'
 
 # svn external merge tool set
-export SVN_MERGE='/Users/baidu/bin/svn_ext_merge.py'
+export SVN_MERGE='~/Applications/svn_ext_merge_araxis_compare_3.py'
 
 svgetinfo (){
  	sv info $@
@@ -155,7 +155,7 @@ svmatchpath (){
 }
 
 # You need to create fmdiff and fmresolve, which can be found at: http://ssel.vub.ac.be/ssel/internal:fmdiff
-alias svdiff='sv diff --diff-cmd svn_ext_diff_p4merge.py' # OS-X SPECIFIC
+alias svdiff='sv diff --diff-cmd ~/Applications/svn_ext_diff_araxis_compare.py' # OS-X SPECIFIC
 # Use diff for command line diff, use fmdiff for gui diff, and svdiff for subversion diff
 
 # NodeJS global env
